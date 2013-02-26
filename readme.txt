@@ -1,9 +1,9 @@
 === WPsoonOnlinePage ===
 Contributors: Giannopoulos Konstantinos 
-Tags: soon online, under construction, construction, sec
+Tags: soon online, under construction, construction, security, underconstruction
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 1.00
+Stable tag: 1.01
 
 Creates a Soon Online Page (cooning soon) that is visible by all not logged in wordpress users.
 

@@ -1,7 +1,7 @@
 === WPsoonOnlinePage ===
-Contributors: Giannopoulos Konstantinos 
-Tags: soon online, under construction, construction, security, underconstruction
-Requires at least: 3.5
+Contributors: elsteno
+Tags: soon online, under construction, construction, security, underconstruction, maintance mode
+Requires at least: 3.3
 Tested up to: 3.5.1
 Stable tag: 1.01
 
@@ -9,13 +9,16 @@ Creates a Soon Online Page (cooning soon) that is visible by all not logged in w
 
 == Description ==
 
-Creates a Soon Online Page (cooning soon) that is visible by all not logged in wordpress users. It is very useful for new sites that are underconstruction!
+Creates a Soon Online Page (cooning soon) that is visible by all not logged in wordpress users. 
+It is very useful for new sites that are underconstruction!
+
 
 == Installation ==
 
 1. Upload the folder to the default wordpress plugin directory \`/wp-content/plugins/\`   
 2. Activate the plugin through your \'Plugins\' menu in your WordPress installation  
 3. Click Settings->WP Soon Online Page menu and change the settings as you wish.
+
 == Frequently Asked Questions ==
 
 **I have an idea for your plugin!**  

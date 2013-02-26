@@ -1,5 +1,7 @@
 === WPsoonOnlinePage ===
-Contributors: Giannopoulos Konstantinos 
+Contributors: elsteno
+Author: Giannopoulos Konstantinos
+Author URI: http://www.mobisoft.gr 
 Tags: soon online, under construction, construction, security, underconstruction
 Requires at least: 3.5
 Tested up to: 3.5.1
@@ -10,6 +12,14 @@ Creates a Soon Online Page (cooning soon) that is visible by all not logged in w
 == Description ==
 
 Creates a Soon Online Page (cooning soon) that is visible by all not logged in wordpress users. It is very useful for new sites that are underconstruction!
+
+**Upcoming Versions New Features**
+1. Counter
+2. default themes
+3. Mail collection app
+  
+
+
 
 == Installation ==
 

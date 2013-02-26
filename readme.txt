@@ -1,7 +1,7 @@
 === WPsoonOnlinePage ===
 Contributors: elsteno
-Tags: soon online, under construction, construction, security, underconstruction
-Requires at least: 3.5
+Tags: soon online, under construction, construction, security, underconstruction, maintance mode
+Requires at least: 3.3
 Tested up to: 3.5.1
 Stable tag: 1.01
 

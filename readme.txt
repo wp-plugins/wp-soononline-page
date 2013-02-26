@@ -29,3 +29,6 @@ Oops. Please send a comment to info@mobisoft.gr and we will try to fix it.
 == Changelog ==
 **1.0**  
 First version
+
+**1.01**  
+Added : Upload background image, Option to stretch background image, Option to repeat background image

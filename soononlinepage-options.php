@@ -49,15 +49,32 @@ if  (isset($_POST['soonOnlineTitleFont']))
 {
 	update_option('soonOnlineTitleFont', $_POST['soonOnlineTitleFont']);
 }
+
+if  (isset($_POST['soonOnlineBGimage'])) 
+{
+	update_option('soonOnlineBGimage', $_POST['soonOnlineBGimage']);
+}
+
+if  (isset($_POST['soonOnlineStretchBGimage'])) 
+{
+	update_option('soonOnlineStretchBGimage', $_POST['soonOnlineStretchBGimage']);
+}
+
+if  (isset($_POST['soonOnlineRepeatBGimage'])) 
+{
+	update_option('soonOnlineRepeatBGimage', $_POST['soonOnlineRepeatBGimage']);
+}
 ?>
 
 
 
 <div class="wrap">
-<h2>Mobisoft WP Soon Online</h2>
+<div id="icon-options-general" class="icon32"></div>
+<h2>WP SoonOnline Page</h2>
+
+<br />
 
 <form method="post" action="<?php echo $GLOBALS['PHP_SELF'] . '?page=' . $this->mainOptionsPage; ?>" id="mobioptions">
-<h3>Generic Settings</h3>
 	<table class="form-table">
         <tr valign="top">
         <th scope="row"><strong>Turn Plugin ON/OFF</strong></th>
@@ -69,7 +86,27 @@ if  (isset($_POST['soonOnlineTitleFont']))
 				<label title="deactivate"> <input type="radio"name="activate" value="0"<?php if (!$this->pluginIsActive()) { echo ' checked="checked"'; } ?>> off </label>
 			</p>        
         </td>	        
-        </tr>      
+        </tr>  
+    </table>   
+    <?php submit_button(); ?>
+</form>        
+<br />        
+        
+<!-- START FIRST CONTAINER TABLE -->
+
+<table class="widefat">
+<thead>
+<tr>
+<th>Style Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+	     
+<form method="post" action="<?php echo $GLOBALS['PHP_SELF'] . '?page=' . $this->mainOptionsPage; ?>" id="mobioptions">
+	<table class="form-table">
+   
 
 <!-------------------------------------------------------------------------------->
 <!-------------------- COLORS CONFIGURATION -------------------->
@@ -81,6 +118,41 @@ if  (isset($_POST['soonOnlineTitleFont']))
 	        	<input type="text" name="soonOnlineBGcolor" value="<?php echo get_option('soonOnlineBGcolor');?>" class="mobicolor-field" data-default-color="#effeff" />
 			</td>
         </tr>
+
+        <tr valign="top">
+        	<th scope="row"><strong>Upload Background Image</strong></th>
+        	<td>
+	        	<input type="text"  name="soonOnlineBGimage" value="<?php echo get_option('soonOnlineBGimage');?>" size="80" />
+				<input type="button" class="mobisoft-upload-button button" value="Upload Image" /><br />
+				<span>Enter the image location or upload an image from your computer.</span>
+				<br /><br /> <strong>Current Background Image : </strong> <?php echo get_option('soonOnlineBGimage');?><br />
+				<blockquote><img src="<?php echo get_option('soonOnlineBGimage');?>"/></blockquote>
+			</td>
+        </tr>
+
+        <tr valign="top">
+        <th scope="row"><strong>Stretch Background Image;</strong></th>
+        <td>
+        	<p>
+				<label title="stretched"> <input type="radio" name="soonOnlineStretchBGimage" value="1"<?php if ($this->stretchBG()) { echo ' checked="checked"'; } ?>> yes </label>
+			</p>
+			<p>
+				<label title="nostretched"> <input type="radio"name="soonOnlineStretchBGimage" value="0"<?php if (!$this->stretchBG()) { echo ' checked="checked"'; } ?>> no </label>
+			</p>        
+        </td>	        
+        </tr>
+
+        <tr valign="top">
+        <th scope="row"><strong>Repeat Background Image;</strong></th>
+        <td>
+        	<p>
+				<label title="repeated"> <input type="radio" name="soonOnlineRepeatBGimage" value="1"<?php if ($this->repeatBG()) { echo ' checked="checked"'; } ?>> yes </label>
+			</p>
+			<p>
+				<label title="norepeated"> <input type="radio"name="soonOnlineRepeatBGimage" value="0"<?php if (!$this->repeatBG()) { echo ' checked="checked"'; } ?>> no </label>
+			</p>        
+        </td>	        
+        </tr>        
 
         <tr valign="top">
         	<th scope="row"><strong>Title Color</strong></th>
@@ -117,9 +189,42 @@ if  (isset($_POST['soonOnlineTitleFont']))
 		        	<option value='_verdana'  <?php if ($selectedfont=="_verdana") {echo "selected=selected";}?>>Verdana</option>
 			</td>
         </tr>
+
+    </table>
+    
+    <?php submit_button(); ?>
+
+</form>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<br />
+
+
 <!-------------------------------------------------------------------------------->
 <!---------------------- TEXTS CONFIGURATION --------------------->
 <!-------------------------------------------------------------------------------->
+
+<table class="widefat">
+<thead>
+<tr>
+<th>Style Configuration</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>
+	     
+<form method="post" action="<?php echo $GLOBALS['PHP_SELF'] . '?page=' . $this->mainOptionsPage; ?>" id="mobioptions">
+<h3>Generic Settings</h3>
+	<table class="form-table">
+
 
         <tr valign="top">
         	<th scope="row"><strong>Body Title</strong></th>
@@ -156,6 +261,12 @@ if  (isset($_POST['soonOnlineTitleFont']))
     <?php submit_button(); ?>
 
 </form>
+
+</td>
+</tr>
+</tbody>
+</table>
+
 </div>        	
 <div class="clear"></div>
 

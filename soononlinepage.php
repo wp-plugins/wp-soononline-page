@@ -3,7 +3,7 @@
 Plugin Name: WP SoonOnline Page
 Plugin URI: http://www.mobisoft.gr/wordpress/plugins/wp-soon-online-page/index.php
 Description: Just a soon online page Wordpress plugin.
-Version: 1.01
+Version: 1.02
 Author: Giannopoulos Kostas
 Author URI: http://www.mobisoft.gr/
 License: GPL2

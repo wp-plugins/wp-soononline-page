@@ -47,7 +47,7 @@ function showSoonOnlinePage($title)
                 font-weight: normal;
                 display: block;
                 text-align: center;
-                 color: <?php echo get_option('soonOnlineBTitlecolor');?>;
+                color: <?php echo get_option('soonOnlineBTitlecolor');?>;
             
             }
             
@@ -75,7 +75,13 @@ function showSoonOnlinePage($title)
                 margin-top: 100px;
                 margin-right: 0px;
                 margin-bottom: 0px;
-                background-color: <?php echo get_option('soonOnlineBGcolor');?>;
+                background: <?php echo get_option('soonOnlineBGcolor');?> url('<?php echo get_option('soonOnlineBGimage');?>');
+                background-position: center center;
+                <?php if (get_option('soonOnlineRepeatBGimage')==1) { echo " background-repeat: repeat;"; } else { echo "  background-repeat: no-repeat;"; } ?>
+                <?php if (get_option('soonOnlineStretchBGimage')==1) { echo "   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;"; }?>
                 color: #FFF;
                 font-family: Arial, Helvetica, sans-serif;
             }

@@ -78,12 +78,10 @@ function showSoonOnlinePage($title)
                 background: <?php echo get_option('soonOnlineBGcolor');?> url('<?php echo get_option('soonOnlineBGimage');?>');
                 background-position: center center;
                 <?php if (get_option('soonOnlineRepeatBGimage')==1) { echo " background-repeat: repeat;"; } else { echo "  background-repeat: no-repeat;"; } ?>
-                <?php if (get_option('soonOnlineStretchBGimage')==1) { echo "   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;"; }?>
+                <?php if (get_option('soonOnlineStretchBGimage')==1) { echo "   -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"; }?>
                 color: #FFF;
                 font-family: Arial, Helvetica, sans-serif;
+
             }
             
             .logo {
@@ -91,7 +89,7 @@ function showSoonOnlinePage($title)
             }
         </style>
     </head>
-    <body>
+    <body style="mobibody">
     	<div class="mobimain">
     	<img class="logo" src="<?php echo get_option('soonOnlineLogo');?>"/>
         <span class="bodyTitle">

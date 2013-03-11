@@ -37,4 +37,4 @@ First version
 Added : Upload background image, Option to stretch background image, Option to repeat background image
 
 **1.02**
-Fix strech image problem
+Fix strech image width problem

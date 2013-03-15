@@ -84,9 +84,7 @@ function showSoonOnlinePage($title)
 
             }
             
-            .logo {
-	            
-            }
+
         </style>
     </head>
     <body style="mobibody">

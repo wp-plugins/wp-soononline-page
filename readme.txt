@@ -3,7 +3,7 @@ Contributors: elsteno
 Tags: soon online, under construction, construction, security, underconstruction, maintance mode
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 1.02
+Stable tag: 1.03
 
 Creates a Soon Online Page (cooning soon) that is visible by all not logged in wordpress users.
 
@@ -38,3 +38,6 @@ Added : Upload background image, Option to stretch background image, Option to r
 
 **1.02**
 Fix strech image width problem
+
+**1.03**
+Fix 2 bugs 

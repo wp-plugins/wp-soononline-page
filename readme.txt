@@ -4,6 +4,7 @@ Tags: soon online, under construction, construction, security, underconstruction
 Requires at least: 3.3
 Tested up to: 3.5.1
 Stable tag: 1.03
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=62E77MLP4MR34
 
 Creates a Soon Online Page (cooning soon) that is visible by all not logged in wordpress users.
 

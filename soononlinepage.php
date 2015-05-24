@@ -3,7 +3,7 @@
 Plugin Name: WP SoonOnline Page
 Plugin URI: http://www.mobisoft.gr/wordpress/plugins/wp-soon-online-page/index.php
 Description: Just a soon online page Wordpress plugin.
-Version: 1.03
+Version: 1.9
 Author: Giannopoulos Kostas
 Author URI: http://www.mobisoft.gr/
 License: GPL2
@@ -59,9 +59,9 @@ class mobisoftSoonOnline {
 	{
 		/* Register our plugin page */
 		$page = add_options_page('WP Soon Online Settings', 'WP Soon Online', 'activate_plugins', $this->mainOptionsPage, array($this, 'mobi_changePageStyle'));
-		
+
 	}
-	
+
 
 	function mobi_overrideWP()
 	{
@@ -165,9 +165,9 @@ add_action( 'admin_enqueue_scripts', 'mw_enqueue_color_picker' );
 
 
 
-define ( 'MOBISOFT_UPLOAD_PLUGIN_URL', plugin_dir_url(__FILE__)); 
+define ( 'MOBISOFT_UPLOAD_PLUGIN_URL', plugin_dir_url(__FILE__));
 
-function mobisoft_upload_admin_scripts() 
+function mobisoft_upload_admin_scripts()
 {
 
 		 wp_enqueue_script('jquery');
